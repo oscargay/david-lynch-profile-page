@@ -9,6 +9,8 @@ class PagesController < ApplicationController
     @elephant = scrape("the elephant man")
   end
 
+  private
+
   def scrape(film)
     url = "https://www.imdb.com/find?q=#{film}&ref_=nv_sr_sm"
     html_file = open(url).read
