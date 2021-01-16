@@ -13,7 +13,7 @@ body {
 }
 
 .banner-info {
-  color: #010101;
+  color: rgba(255,255,255,0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,9 +56,36 @@ body {
 }
 
 #blue-velvet {
-  background: url('david-lynch.jpg') no-repeat scroll right center white;
+  background: url('blue.jpg') no-repeat scroll right center white;
   background-size: cover;
   background-position: center;
   background-origin: content-box;
+}
+
+#mulholland {
+  background: url('mulholland-dr.png') no-repeat scroll right center white;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+}
+
+#twin-peaks {
+  background: url('twin.jpg') no-repeat scroll right center white;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
 }
 
