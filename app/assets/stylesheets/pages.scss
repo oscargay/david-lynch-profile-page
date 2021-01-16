@@ -1,0 +1,64 @@
+body {
+  font-family: 'Montserrat';
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('david-lynch.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner-info {
+  color: #010101;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  margin-left: 32px;
+}
+
+.block {
+  height: 300px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.multimedia {
+  padding: 8px;
+}
+
+.film-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#eraserhead {
+  background: url('eraserhead.jpg') no-repeat scroll right center white;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+}
+
+#elephant {
+  background: url('elephant-man.jpg') no-repeat scroll right center white;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+}
+
+#blue-velvet {
+  background: url('david-lynch.jpg') no-repeat scroll right center white;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+}
+
