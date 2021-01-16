@@ -87,3 +87,21 @@ body {
 .modal-body {
   color: rgba(0,0,0,0.7);
 }
+
+.music {
+  height: 100vh;
+}
+
+.angelo-pic {
+  background: url('angelo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.angelo-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
