@@ -3,48 +3,156 @@
     <div class="banner-info">
       <h1>David Lynch</h1>
       <p><em>American Filmmaker</em></p>
-      <p><%= @test %></p>
-
     </div>
   </div>
-  <div class="row block">
-    <div class="col-xs-12 col-lg-6 multimedia" id="eraserhead">
+  <%= link_to root_path, :class => 'open-modal', "data-toggle" => "modal", 'data-target' => '#eraserhead-modal' do %>
+    <div class="row block">
+      <div class="col-xs-12 col-lg-6 multimedia" id="eraserhead">
+      </div>
+      <div class="col-xs-12 col-lg-6 film-info">
+        <h3 class="title">Eraserhead (1977)</h3>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+      </div>
     </div>
-    <div class="col-xs-12 col-lg-6 film-info">
-      <h3 class="title">Eraserhead (1977)</h3>
-      <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
-    </div>
-  </div>
-  <div class="row block">
-    <div class="col-xs-12 col-lg-6 film-info">
-      <h3 class="title">The Elephant Man (1980)</h3>
-      <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
-    </div>
-    <div class="col-xs-12 col-lg-6 multimedia" id="elephant">
-    </div>
-  </div>
-  <div class="row block">
-    <div class="col-xs-12 col-lg-6 multimedia" id="blue-velvet">
-    </div>
-    <div class="col-xs-12 col-lg-6 film-info">
-      <h3 class="title">Blue Velvet (1986)</h3>
-      <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
-    </div>
-  </div>
-  <div class="row block">
-    <div class="col-xs-12 col-lg-6 film-info">
-      <h3 class="title">Twin Peaks: Fire Walk with Me (1992)</h3>
-      <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
-    </div>
-    <div class="col-xs-12 col-lg-6 multimedia" id="twin-peaks">
+  <% end %>
+  <div class="modal fade" id="eraserhead-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Eraserhead (1977) | Trailer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="250" frameborder="0"
+          src="https://www.youtube.com/embed/J0Eq5GtCYdA">
+          </iframe>
+          <p class="mt-3">
+             IMDb Rating: <%= @eraserhead %> / 10 (<%= Date.today.strftime("%A, %b %d") %>)
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row block">
-    <div class="col-xs-12 col-lg-6 multimedia" id="mulholland">
+  <%= link_to root_path, :class => 'open-modal', "data-toggle" => "modal", 'data-target' => '#elephant-modal' do %>
+    <div class="row block">
+      <div class="col-xs-12 col-lg-6 film-info">
+        <h3 class="title">The Elephant Man (1980)</h3>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+      </div>
+      <div class="col-xs-12 col-lg-6 multimedia" id="elephant">
+      </div>
     </div>
-    <div class="col-xs-12 col-lg-6 film-info">
-      <h3 class="title">Mulholland Drive (2001)</h3>
-      <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+  <% end %>
+  <div class="modal fade" id="elephant-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">The Elephant Man (1980) | Trailer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="250" frameborder="0"
+          src="https://www.youtube.com/embed/ZvJuJKOmZAY">
+          </iframe>
+          <p class="mt-3">
+             IMDb Rating: <%= @elephant %> / 10 (<%= Date.today.strftime("%A, %b %d") %>)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= link_to root_path, :class => 'open-modal', "data-toggle" => "modal", 'data-target' => '#blue-modal' do %>
+    <div class="row block">
+      <div class="col-xs-12 col-lg-6 multimedia" id="blue-velvet">
+      </div>
+      <div class="col-xs-12 col-lg-6 film-info">
+        <h3 class="title">Blue Velvet (1986)</h3>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+      </div>
+    </div>
+  <% end %>
+  <div class="modal fade" id="blue-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Blue Velvet (1986) | Trailer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="250" frameborder="0"
+          src="https://www.youtube.com/embed/k_BybDB_phY">
+          </iframe>
+          <p class="mt-3">
+             IMDb Rating: <%= @blue_velvet %> / 10 (<%= Date.today.strftime("%A, %b %d") %>)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= link_to root_path, :class => 'open-modal', "data-toggle" => "modal", 'data-target' => '#twin-modal' do %>
+    <div class="row block">
+      <div class="col-xs-12 col-lg-6 film-info">
+        <h3 class="title">Twin Peaks: Fire Walk with Me (1992)</h3>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+      </div>
+      <div class="col-xs-12 col-lg-6 multimedia" id="twin-peaks">
+      </div>
+    </div>
+  <% end %>
+  <div class="modal fade" id="twin-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Twin Peaks: FWwM (1992) | Trailer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="250" frameborder="0"
+          src="https://www.youtube.com/embed/I9Ey1FQVIO8">
+          </iframe>
+          <p class="mt-3">
+             IMDb Rating: <%= @twin_peaks %> / 10 (<%= Date.today.strftime("%A, %b %d") %>)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= link_to root_path, :class => 'open-modal', "data-toggle" => "modal", 'data-target' => '#mulholland-modal' do %>
+    <div class="row block">
+      <div class="col-xs-12 col-lg-6 multimedia" id="mulholland">
+      </div>
+      <div class="col-xs-12 col-lg-6 film-info">
+        <h3 class="title">Mulholland Drive (2001)</h3>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+      </div>
+    </div>
+  <% end %>
+  <div class="modal fade" id="mulholland-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Mulholland Drive (2001) | Trailer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="250" frameborder="0"
+          src="https://www.youtube.com/embed/jbZJ487oJlY">
+          </iframe>
+          <p class="mt-3">
+             IMDb Rating: <%= @mulholland %> / 10 (<%= Date.today.strftime("%A, %b %d") %>)
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -76,16 +76,14 @@ body {
   background-origin: content-box;
 }
 
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.open-modal {
+  color: #212529;
+  &:hover{
+    text-decoration: none;
+    color: #212529;
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.modal-body {
+  color: rgba(0,0,0,0.7);
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
