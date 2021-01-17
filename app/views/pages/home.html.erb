@@ -3,11 +3,10 @@
         <div class="container">
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Gallery</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Portfolio</a></li>
-                    <li class="nav-item"><%= link_to "About", root_path(anchor: 'elephant'), class: "nav-link text-uppercase font-weight-bold" %></li>
+                    <li class="nav-item active"><%= link_to "Home", root_path(anchor: 'banner'), class: "nav-link text-uppercase font-weight-bold" %></li>
+                    <li class="nav-item"><%= link_to "Film", root_path(anchor: 'films'), class: "nav-link text-uppercase font-weight-bold" %></li>
+                    <li class="nav-item"><%= link_to "Music", root_path(anchor: 'music'), class: "nav-link text-uppercase font-weight-bold" %></li>
+                    <li class="nav-item"><%= link_to "Art", root_path(anchor: 'arts'), class: "nav-link text-uppercase font-weight-bold" %></li>
                 </ul>
             </div>
         </div>
@@ -21,12 +20,12 @@
     </div>
   </div>
   <%= link_to root_path, :class => 'open-modal', "data-toggle" => "modal", 'data-target' => '#eraserhead-modal' do %>
-    <div class="row block">
+    <div class="row block" id="films">
       <div class="col-xs-12 col-lg-6 multimedia" id="eraserhead">
       </div>
       <div class="col-xs-12 col-lg-6 film-info">
         <h3 class="title">Eraserhead (1977)</h3>
-        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+        <p class="content">Taking over 5 years to produce, Lynch's first feature-length film stands as a cult-classic that shook cinematic conventions upon release. A dream-like film that pushes into the realm of horror, Eraserhead encapsulates everything Lynchian.</p>
       </div>
     </div>
   <% end %>
@@ -43,9 +42,6 @@
           <iframe width="100%" height="250" frameborder="0"
           src="https://www.youtube.com/embed/J0Eq5GtCYdA">
           </iframe>
-          <p class="mt-3">
-             IMDb Rating: <%= @eraserhead %> / 10 (<%= Date.today.strftime("%A, %b %d") %>)
-          </p>
         </div>
       </div>
     </div>
@@ -54,7 +50,7 @@
     <div class="row block">
       <div class="col-xs-12 col-lg-6 film-info">
         <h3 class="title">The Elephant Man (1980)</h3>
-        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+        <p class="content">Winning 8 academy awards, The Elephant Man was a commercial success upon release that highlighted the emotional turmoil of the human condition and appeared as a departure from the absurd and surreal nature of Lynch's previous film. </p>
       </div>
       <div class="col-xs-12 col-lg-6 multimedia" id="elephant">
       </div>
@@ -73,9 +69,6 @@
           <iframe width="100%" height="250" frameborder="0"
           src="https://www.youtube.com/embed/ZvJuJKOmZAY">
           </iframe>
-          <p class="mt-3">
-             IMDb Rating: <%= @elephant %> / 10 (<%= Date.today.strftime("%A, %b %d") %>)
-          </p>
         </div>
       </div>
     </div>
@@ -86,7 +79,7 @@
       </div>
       <div class="col-xs-12 col-lg-6 film-info">
         <h3 class="title">Blue Velvet (1986)</h3>
-        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+        <p class="content">A neo-noir mystery thriller, Blue Velvet blends the genres of film noir with psychological horror to create something truly memorable. Dennis Hopper's erratic portrayal of Frank still exists as one of the best antagonists in film history.</p>
       </div>
     </div>
   <% end %>
@@ -103,9 +96,6 @@
           <iframe width="100%" height="250" frameborder="0"
           src="https://www.youtube.com/embed/k_BybDB_phY">
           </iframe>
-          <p class="mt-3">
-             IMDb Rating: <%= @blue_velvet %> / 10 (<%= Date.today.strftime("%A, %b %d") %>)
-          </p>
         </div>
       </div>
     </div>
@@ -114,7 +104,7 @@
     <div class="row block">
       <div class="col-xs-12 col-lg-6 film-info">
         <h3 class="title">Twin Peaks: Fire Walk with Me (1992)</h3>
-        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+        <p class="content">The feature length film that followed the classic TV show, Twin Peaks, Fire Walk with Me had questionable reviews upon release due to its departure from some of the aspects of Twin Peaks that fans loved from the show.</p>
       </div>
       <div class="col-xs-12 col-lg-6 multimedia" id="twin-peaks">
       </div>
@@ -124,7 +114,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Twin Peaks: FWwM (1992) | Trailer</h5>
+          <h5 class="modal-title">Fire Walk with Me (1992) | Trailer</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -133,9 +123,6 @@
           <iframe width="100%" height="250" frameborder="0"
           src="https://www.youtube.com/embed/I9Ey1FQVIO8">
           </iframe>
-          <p class="mt-3">
-             IMDb Rating: <%= @twin_peaks %> / 10 (<%= Date.today.strftime("%A, %b %d") %>)
-          </p>
         </div>
       </div>
     </div>
@@ -146,7 +133,7 @@
       </div>
       <div class="col-xs-12 col-lg-6 film-info">
         <h3 class="title">Mulholland Drive (2001)</h3>
-        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+        <p class="content">Perhaps Lynch's greatest film to date, Mulholland Drive depicts a commentary on the state of Hollywood in the early 2000s and on subconscious wish fulfilment, often leaving the viewer with more questions than answers after watching for the first time.</p>
       </div>
     </div>
   <% end %>
@@ -163,14 +150,11 @@
           <iframe width="100%" height="250" frameborder="0"
           src="https://www.youtube.com/embed/jbZJ487oJlY">
           </iframe>
-          <p class="mt-3">
-             IMDb Rating: <%= @mulholland %> / 10 (<%= Date.today.strftime("%A, %b %d") %>)
-          </p>
         </div>
       </div>
     </div>
   </div>
-  <div class="row music">
+  <div class="row music" id="music">
     <div class="col-xs-12 col-lg-6 angelo-info py-4">
       <div class="music-description">
         <h3>Angelo Badalamenti</h3>
@@ -203,10 +187,30 @@
         </a>
       </div>
       <div class="desc">
-        <p class="content text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis inventore adipisci itaque sapiente nostrum iure veniam corporis doloribus dolore, illum vel error magni non fugiat quae impedit commodi eaque?</p>
+        <p class="content text-center">A staple in Lynch's films, Angelo Badalamenti produces scores that always match the absurd nature of what's on screen. From the smooth jazz of Twin Peaks to the foreboding opening track of Mulholland Drive, Lynch's films wouldn't be the same without Badalamenti.</p>
       </div>
     </div>
     <div class="col-xs-12 col-lg-6 angelo-pic">
+    </div>
+  </div>
+  <div class="row d-flex justify-content-center  mt-5 art-row">
+    <div class="col-6">
+      <h3 class="text-center">Art</h3>
+      <p class="content text-center">In addition to his directing, David Lynch is also known for his art, including paintings, drawings and sculptures that continue many of the themes found in his films, such as the impact of dreams on our lives, surrealism and psychoanalysis.</p>
+    </div>
+  </div>
+  <div class="cards" id="arts">
+    <div class="card" id="art-2">
+    </div>
+    <div class="card" id="art-1">
+    </div>
+    <div class="card" id="art-3">
+    </div>
+    <div class="card" id="art-5">
+    </div>
+    <div class="card" id="art-7">
+    </div>
+    <div class="card" id="art-6">
     </div>
   </div>
 </div>

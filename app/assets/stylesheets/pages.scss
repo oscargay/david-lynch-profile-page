@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;;
+}
+
 body {
   font-family: 'Montserrat';
 }
@@ -125,8 +129,6 @@ body {
     color: #fff;
 }
 
-
-/* Change navbar styling on scroll */
 .navbar.active {
     background: #fff;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
@@ -147,14 +149,122 @@ body {
 }
 
 
-/* Change navbar styling on small viewports */
-@media (max-width: 991.98px) {
-    .navbar {
-        background: #fff;
-    }
+// @media (max-width: 991.98px) {
+//     .navbar {
+//         background: #fff;
+//     }
 
-    .navbar .navbar-brand, .navbar .nav-link {
-        color: #555;
-    }
+//     .navbar .navbar-brand, .navbar .nav-link {
+//         color: #555;
+//     }
+// }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin-top: 32px;
 }
 
+@media(max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+#art-1 {
+  display: flex;
+  align-self: center;
+  height: 250px;
+  background: url('lynch_art_1.jpg');
+  filter: grayscale(100%);
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    filter: grayscale(0%);
+  }
+  background-size: cover;
+  background-position: center;
+}
+
+#art-2 {
+  height: 350px;
+  background: url('lynch_art_2.jpg');
+  filter: grayscale(100%);
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    filter: grayscale(0%);
+  }
+  background-size: cover;
+  background-position: center;
+}
+
+#art-3 {
+  height: 350px;
+  background: url('lynch_art_3.jpg');
+  filter: grayscale(100%);
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    filter: grayscale(0%);
+  }
+  background-size: cover;
+  background-position: center;
+}
+
+#art-7 {
+  display: flex;
+  align-self: center;
+  height: 225px;
+  background: url('lynch_art_7.jpg');
+  filter: grayscale(100%);
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    filter: grayscale(0%);
+  }
+  background-size: cover;
+  background-position: center;
+}
+
+#art-5 {
+  height: 350px;
+  background: url('lynch_art_5.jpg');
+  filter: grayscale(100%);
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    filter: grayscale(0%);
+  }
+  background-size: cover;
+  background-position: center;
+}
+
+#art-6 {
+  display: flex;
+  align-self: center;
+  height: 325px;
+  background: url('lynch_art_6.jpg');
+  filter: grayscale(100%);
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    filter: grayscale(0%);
+  }
+  background-size: cover;
+  background-position: center;
+}
+// .lynch-art-main {
+//   height: 33vh;
+//   background: url('lynch_art_main.jpg') no-repeat scroll right center white;
+//   background-size: cover;
+//   background-position: center;
+//   background-origin: content-box;
+// }
