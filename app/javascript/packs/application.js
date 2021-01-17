@@ -16,3 +16,12 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+$(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 700 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});

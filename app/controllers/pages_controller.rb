@@ -2,11 +2,17 @@ class PagesController < ApplicationController
   require 'open-uri'
   require 'nokogiri'
   def home
-    @mulholland = scrape("mulholland drive")
-    @eraserhead = scrape("eraserhead")
-    @blue_velvet = scrape("blue velvet")
-    @twin_peaks = scrape("twin peaks fire walk with me")
-    @elephant = scrape("the elephant man")
+    # @mulholland = scrape("mulholland drive")
+    # @eraserhead = scrape("eraserhead")
+    # @blue_velvet = scrape("blue velvet")
+    # @twin_peaks = scrape("twin peaks fire walk with me")
+    # @elephant = scrape("the elephant man")
+
+    @mulholland = 10
+    @eraserhead = 10
+    @blue_velvet = 10
+    @twin_peaks = 10
+    @elephant = 10
   end
 
   private
